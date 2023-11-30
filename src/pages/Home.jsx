@@ -8,9 +8,8 @@ import administracia from "../image/administracia.jpg";
 
 const Home = () => {
   return (
-    
-      <div className="boxhome">
-        <PageWrapperHome>
+    <div className="boxhome">
+      <PageWrapperHome>
         <div className="titlesection">
           <h1>Кафедра "Информационных систем и технологий"</h1>
           <img src={zgu} alt="ZGU Logo" className="zguimg" />
@@ -40,11 +39,48 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        </PageWrapperHome>
-        
-      </div>
-    
+        <div className="okafedre">
+          <h3 align="center">О кафедре</h3>
+          <div className="kaf1">
+            <div className="lilbox4">Курсы проводимые на кафедре</div>
+            <div className="lilbox4">
+              Дата основания {""}5 декабря {""}
+              2002 года
+            </div>
+            <div className="lilbox4">
+              <p>
+                Средний возраст сотрудников кафедры составляет {""}
+                36,5 лет
+              </p>
+            </div>
+          </div>
+          <div className="kaf2">
+            <div className="kafleft">
+              <div className="kafleft1">
+                <div className="lilbox4">
+                  Передовой центр научных исследований и разработок в области
+                  информационных технологий на территории Крайнего Севера.
+                </div>
+                <div className="lilbox4">
+                  Сотрудничаем с крупнейшим в мире производителем никеля и
+                  палладия компанией НорНикель, что позволяет студентам получить
+                  практические навыки работы.
+                </div>
+              </div>
+              <div className="kafleft2">
+                <div className="lilbox9">ИСиТ</div>
+                <div className="lilbox10">
+                  Заполярный государственный универститет им.н.м. федоровского
+                </div>
+              </div>
+            </div>
+            <div className="kafright">
+              <div className="lilbox8">Норильск</div>
+            </div>
+          </div>
+        </div>
+      </PageWrapperHome>
+    </div>
   );
 };
 

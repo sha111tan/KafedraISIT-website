@@ -3,13 +3,30 @@ import { PageWrapper } from "../components/PageWrapper";
 
 const Staff = () => {
   return (
-    <div className="box">
+    <div className="staffbox">
       <PageWrapper>
-        <h1>Сотрудники</h1>
-        <p>
-          Meet our talented and dedicated staff members who contribute to the
-          success of our university.
-        </p>
+        <h3 align="center">Сотрудники кафедры</h3>
+        <div className="staffcontainer">
+          <div className="stafflilbox">
+            <div className="staffimg"></div>
+            <div className="stafftext">
+              Дыптан Елена<br></br>Арнольдовна
+            </div>
+          </div>
+
+          <div className="stafflilbox">
+            <div className="staffimg"></div>
+            <div className="stafftext">
+              Беляев Игорь<br></br> Сергеевич
+            </div>
+          </div>
+          <div className="stafflilbox">
+            <div className="staffimg"></div>
+            <div className="stafftext">
+              Попкова Алла<br></br> Алексеевна
+            </div>
+          </div>
+        </div>
       </PageWrapper>
     </div>
   );

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=PT+Mono&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700&family=PT+Mono&family=Play:wght@400;700&family=Press+Start+2P&display=swap");
+@import url("https://fonts.cdnfonts.com/css/days-one");
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -23,12 +24,12 @@
 }
 
 body {
+  margin: 0 auto;
+  padding: 100px 100px 20px 100px;
   display: flex;
-  place-items: center;
   width: 100%;
-  min-height: 100vh;
 }
-
+/*navbar*/
 .navbar {
   font-family: "PT Mono", sans-serif;
   display: flex;
@@ -39,8 +40,6 @@ body {
   top: 0;
   width: 100%;
 }
-
-/* Добавляем стили для контейнера навбара */
 .container {
   top: 30px;
   padding: 0 40px 0 40px;
@@ -58,11 +57,10 @@ body {
   background: rgba(255, 255, 255, 0.2);
   z-index: 100;
 }
-/* Добавляем стили для бренда (левая часть навбара) */
 .brand {
-  color: #fff; /* Цвет текста */
-  width: 50px; /* Ширина логотипа */
-  height: 30px; /* Высота логотипа */
+  color: #fff;
+  width: 100px;
+  height: 25px;
   margin: 0 30px;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
@@ -70,27 +68,28 @@ body {
 .brand:hover {
   transform: scale(1.12);
 }
-
-/* Добавляем стили для навигационных ссылок (правая часть навбара) */
 .nav-links {
   font-size: 15px;
 }
-
 .nav-links a {
-  margin: 0 30px; /* Отступ между ссылками */
+  margin: 0 30px;
   text-decoration: none;
-  color: #00000086; /* Цвет текста */
+  color: #00000086;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-/* Добавляем стили для активной ссылки */
+nav .active {
+  color: #000000;
+}
+
 .nav-links a:hover,
 .nav-links a:active,
 .nav-links a:focus {
-  color: #000000; /* Подчеркивание при наведении */
+  color: #000000;
 }
 
+/*home*/
 .boxhome {
   /* background-image: url("./image/home.png");
   background-repeat: no-repeat;
@@ -110,7 +109,6 @@ body {
   width: 100%;
   clip-path: inset(20px 50px 20px 50px round 40px);
 }
-
 .lilbox1,
 .lilbox2 {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -119,7 +117,7 @@ body {
   background-color: white;
   padding: 40px;
   margin: 0 10px 0 10px;
-  transition-duration: 400ms;
+  transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 .lilbox3 {
@@ -129,18 +127,304 @@ body {
   background-color: white;
   padding: 40px;
   margin: 0 10px 0 10px;
-  transition-duration: 400ms;
+  transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+/*О кафедре*/
+.okafedre {
+  padding: 30px 150px 30px 150px;
+}
+.kaf1 {
+  display: flex;
+  gap: 15px;
+}
+.kaf2 {
+  display: grid;
+  grid-template-columns: 4fr auto;
+  justify-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.kafleft {
+  display: block;
+}
+.kafleft1 {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.kafleft2 {
+  display: grid;
+  grid-template-columns: auto 3fr;
+  gap: 15px;
+}
+.kafright {
+  display: flex;
+}
+.lilbox8 {
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 30px;
+  background-color: white;
+  padding: 100px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.lilbox9 {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 30px;
+  background-color: white;
+  padding: 40px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.lilbox10 {
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 30px;
+  background-color: white;
+  padding: 40px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+/*научная деятельность*/
+.lilbox4 {
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 30px;
+  background-color: white;
+  padding: 20px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.lilbox5 {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 30px;
+  background-color: white;
+  padding: 100px;
+  transition-duration: 200ms;
+  margin-bottom: 15px;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.lilbox6 {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 30px;
+  background-color: white;
+  padding: 40px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 15px;
+}
+
+.right {
+  height: 100%;
+  justify-items: center;
+  gap: 15px;
+}
+
+.nauchnayadeyatelnost {
+  padding: 30px 150px 30px 150px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  gap: 15px;
+  padding-bottom: 100px;
+}
+/*достижения и перспективы*/
+.lilbox7 {
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 30px;
+  background-color: white;
+  padding: 40px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.dostizhenia {
+  padding: 30px 150px 30px 150px;
+  justify-items: center;
+  gap: 15px;
+  padding-bottom: 50px;
+}
+.up {
+  display: flex;
+  justify-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.bottom {
+  display: flex;
+  justify-items: center;
+  gap: 15px;
+}
+/*schedule*/
+.schedulebox {
+  background-color: #e9e9e9;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  height: 100%;
+  padding: 100px;
+  width: 100%;
+  clip-path: inset(20px 50px 20px 50px round 40px);
+}
+
+/*staff*/
+.staffbox {
+  background-color: #e9e9e9;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  height: 100%;
+  padding: 100px;
+  width: 100%;
+  clip-path: inset(20px 50px 20px 50px round 40px);
+}
+.staffcontainer {
+  font-family: "Days One", sans-serif;
+  padding: 30px 150px 30px 150px;
+  display: flex;
+  gap: 15px;
+}
+.stafflilbox {
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 30px;
+  background-color: white;
+  padding: 40px;
+
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.staffimg {
+  border-radius: 30px;
+}
+.stafftext {
+}
+
+/*footer*/
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  gap: 15px;
+}
+.footerleft {
+  gap: 15px;
+  height: 80%;
+}
+.footerright {
+  width: 100%;
+}
+.footerright2 {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+.lilbox11 {
+  font-family: "Days One", sans-serif;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 30px;
+  background-color: white;
+  padding: 60px;
+  margin-bottom: 15px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.lilbox12 {
+  font-family: "Days One", sans-serif;
+
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 30px;
+  background-color: white;
+  padding: 80px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.lilbox13 {
+  font-family: "Days One", sans-serif;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 30px;
+  background-color: white;
+  padding: 100px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.lilbox14 {
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 20px;
+  background-color: white;
+  padding: 40px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.lilbox15 {
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 20px;
+  background-color: white;
+  padding: 40px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.lilbox16 {
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 20px;
+  background-color: white;
+  padding: 40px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.boxfooter {
+  background-color: #e9e9e9;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  height: 100%;
+  padding: 100px;
+  width: 100%;
+  clip-path: inset(20px 50px 20px 50px round 40px);
 }
 
 .lilbox1:hover,
 .lilbox2:hover,
 .lilbox3:hover,
+.lilbox4:hover,
+.lilbox5:hover,
+.lilbox6:hover,
+.lilbox7:hover,
+.lilbox8:hover,
+.lilbox9:hover,
+.lilbox10:hover,
+.lilbox11:hover,
+.lilbox12:hover,
+.lilbox13:hover,
+.stafflilbox:hover,
 .zguimg:hover {
-  cursor: pointer;
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
-
+.lilbox14:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.lilbox15:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.lilbox16:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
 .boxsection {
   display: flex;
   margin-top: 50px;
@@ -153,22 +437,30 @@ body {
   display: flex;
 }
 
+/*текст*/
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Play", sans-serif;
   font-size: 16px;
+  color: rgb(41, 41, 41) f;
 }
 
 h1 {
-  font-family: "Open Sans";
+  font-family: "Days One", sans-serif;
   font-size: 48px;
   width: 75%;
   padding-left: 20px;
 }
 
 h2 {
-  font-family: "Open Sans";
+  font-family: "Days One";
   font-size: 24px;
   padding-bottom: 25px;
+}
+
+h3 {
+  font-family: "Days One", sans-serif;
+  font-size: 48px;
+  padding: 30px 0 30px 0;
 }
 
 .titlesection {
@@ -194,6 +486,9 @@ h2 {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@media (max-width: 800px) {
 }
 
 @font-face {
