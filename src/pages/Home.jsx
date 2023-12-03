@@ -79,6 +79,82 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="napravlenia">
+          <h3 align="center">Направления</h3>
+          <div className="napravlenias">
+            <div className="lilbox17">
+              <div className="titlenapravlenie1 background-tint">
+                <h4 align="left">Прикладная информатика в экономике</h4>
+                <div className="forma">
+                  <h4 align="left">Бакалавриат</h4>
+                  <div className="numbox">
+                    <p>09.03.03</p>
+                  </div>
+                </div>
+              </div>
+              <div className="napravlenieinfo">
+                <div className="formaobuchenia">
+                  <h5>очная</h5>
+                  <p>Форма обучения</p>
+                </div>
+                <div className="srokobuchenia">
+                  <h5>4 года</h5>
+                  <p>Срок обучения</p>
+                </div>
+                <div className="prohodnoyball">
+                  <h5>150</h5>
+                  <p>Проходной балл</p>
+                </div>
+              </div>
+            </div>
+            <div className="lilbox17">
+              <div className="titlenapravlenie2 background-tint">
+                <h4 align="left">Информационные системы и технологии</h4>
+                <div className="forma">
+                  <h4 align="left">Бакалавриат</h4>
+                  <div className="numbox">
+                    <p>09.03.02</p>
+                  </div>
+                </div>
+              </div>
+              <div className="napravlenieinfo">
+                <div className="formaobuchenia">
+                  <h5>очная</h5>
+                  <p>Форма обучения</p>
+                </div>
+                <div className="srokobuchenia">
+                  <h5>4 года</h5>
+                  <p>Срок обучения</p>
+                </div>
+                <div className="prohodnoyball">
+                  <h5>145</h5>
+                  <p>Проходной балл</p>
+                </div>
+              </div>
+            </div>
+            <div className="lilbox17">
+              <div className="titlenapravlenie3 background-tint">
+                <h4 align="left">Прикладная информатика в экономике</h4>
+                <div className="forma">
+                  <h4 align="left">Магистратура</h4>
+                  <div className="numbox">
+                    <p>09.04.03</p>
+                  </div>
+                </div>
+              </div>
+              <div className="napravlenieinfo">
+                <div className="formaobuchenia">
+                  <h5>очная, заочная, очно-заочная</h5>
+                  <p>Форма обучения</p>
+                </div>
+                <div className="srokobuchenia">
+                  <h5>2 или 2,5 года</h5>
+                  <p>Срок обучения</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </PageWrapperHome>
     </div>
   );

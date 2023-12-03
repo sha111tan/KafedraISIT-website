@@ -2,6 +2,7 @@ import React from "react";
 import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Staff from "./pages/Staff";
@@ -11,6 +12,7 @@ import Schedule from "./pages/Schedule";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <Navbar />
         <Routes>
