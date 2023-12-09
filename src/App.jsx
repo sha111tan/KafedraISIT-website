@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Staff from "./pages/Staff";
 import Information from "./pages/Information";
 import Schedule from "./pages/Schedule";
+import Spline from "@splinetool/react-spline";
 
 function App() {
   return (

@@ -1,21 +1,54 @@
 // src/pages/Home.jsx
-import React from "react";
+import React, { useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { PageWrapperHome } from "../components/PageWrapperHome";
-import zgu from "../image/zgu.png";
+import zgu1 from "../image/zgu1.png";
 import nornik from "../image/nornik.jpg";
 import arn from "../image/arn.jpg";
 import administracia from "../image/administracia.jpg";
+import FadeIn from "../components/FadeIn";
+import Marquee from "react-fast-marquee";
+import norilsk from "../image/norilsk.png";
+import nornikel2 from "../image/nornikel2.png";
+import itlogo from "../image/itlogo.png";
 
 const Home = () => {
+  const FADE_DOWN_ANIMATION_VARIANTS = {
+    hidden: { opacity: 0, y: -10 },
+    show: { opacity: 1, y: 0, transition: { type: "spring" } },
+  };
   return (
-    <div className="boxhome">
-      <PageWrapperHome>
-        <div className="titlesection">
-          <h1>Кафедра "Информационных систем и технологий"</h1>
-          <img src={zgu} alt="ZGU Logo" className="zguimg" />
-        </div>
+    <div>
+      <motion.div
+        className="boxhome"
+        initial="hidden"
+        animate="show"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          show: {
+            transition: {
+              staggerChildren: 0.15,
+            },
+          },
+        }}
+      >
+        <motion.div
+          className="titlesection"
+          variants={FADE_DOWN_ANIMATION_VARIANTS}
+        >
+          <h1>&lt;/Кафедра "Информационные системы и технологии"/&gt;</h1>
+          <div>
+            <a href="https://polaruniversity.ru/">
+              <img src={zgu1} className="zguimg"></img>
+            </a>
+          </div>
+        </motion.div>
 
-        <div className="boxsection">
+        <motion.div
+          className="boxsection"
+          variants={FADE_DOWN_ANIMATION_VARIANTS}
+        >
           <div className="lilbox1">
             <h2>Образование</h2>
             <p>Инновационные программы для будущих IT-специалистов</p>
@@ -38,49 +71,86 @@ const Home = () => {
               <img src={administracia} alt="administracia" />
             </div>
           </div>
-        </div>
-        <div className="okafedre">
+        </motion.div>
+      </motion.div>
+
+      <div className="okafedre">
+        <FadeIn delay={0.2} direction="right" padding fullwidth>
           <h3 align="center">О кафедре</h3>
+        </FadeIn>
+        <FadeIn delay={0.3} direction="right" padding fullwidth>
           <div className="kaf1">
-            <div className="lilbox4">Курсы проводимые на кафедре</div>
             <div className="lilbox4">
-              Дата основания {""}5 декабря {""}
-              2002 года
+              <div align="center">
+                <div className="span">Курсы, проводимые на кафедре:</div>
+                <p>WEB-Программирование, базы данных, нейронные сети</p>
+              </div>
             </div>
             <div className="lilbox4">
-              <p>
-                Средний возраст сотрудников кафедры составляет {""}
-                36,5 лет
-              </p>
+              <div align="center">
+                <div className="span">Дата основания:</div>
+                <div className="year">5 декабря 2002 года</div>
+              </div>
+            </div>
+            <div className="lilbox4">
+              <div align="center">
+                <div className="span">Средний возраст сотрудников:</div>
+                <p>36,5 лет</p>
+              </div>
             </div>
           </div>
           <div className="kaf2">
             <div className="kafleft">
               <div className="kafleft1">
                 <div className="lilbox4">
-                  Передовой центр научных исследований и разработок в области
-                  информационных технологий на территории Крайнего Севера.
+                  <div align="center">
+                    <img src={itlogo} className="itlogo"></img>
+                    <p>
+                      Передовой центр научных исследований и разработок в
+                      области информационных технологий на территории Крайнего
+                      Севера.
+                    </p>
+                  </div>
                 </div>
-                <div className="lilbox4">
-                  Сотрудничаем с крупнейшим в мире производителем никеля и
-                  палладия компанией НорНикель, что позволяет студентам получить
-                  практические навыки работы.
+                <div className="lilbox18">
+                  <div>
+                    <img src={nornikel2} className="nornikelimg"></img>
+                    <p>
+                      Сотрудничество с компанией "Норникель", открывает перед
+                      студентами возможности для получения практических навыков
+                      работы в условиях реального производства.
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="kafleft2">
-                <div className="lilbox9">ИСиТ</div>
+                <div className="lilbox9">
+                  <h6>ИСиТ</h6>
+                </div>
                 <div className="lilbox10">
-                  Заполярный государственный универститет им.н.м. федоровского
+                  <img src={zgu1} className="zguimg2"></img>
+                  <h6>
+                    "Заполярный государственный универститет им. Н.М.
+                    Федоровского"
+                  </h6>
                 </div>
               </div>
             </div>
             <div className="kafright">
-              <div className="lilbox8">Норильск</div>
+              <div className="lilbox8">
+                <img src={norilsk} className="norilskimg"></img>
+                <h6 align="center">Норильск</h6>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="napravlenia">
+        </FadeIn>
+      </div>
+
+      <div className="napravlenia">
+        <FadeIn delay={0.2} direction="right" padding fullwidth>
           <h3 align="center">Направления</h3>
+        </FadeIn>
+        <FadeIn delay={0.3} direction="right" padding fullwidth>
           <div className="napravlenias">
             <div className="lilbox17">
               <div className="titlenapravlenie1 background-tint">
@@ -94,15 +164,15 @@ const Home = () => {
               </div>
               <div className="napravlenieinfo">
                 <div className="formaobuchenia">
-                  <h5>очная</h5>
+                  <div className="span">очная</div>
                   <p>Форма обучения</p>
                 </div>
                 <div className="srokobuchenia">
-                  <h5>4 года</h5>
+                  <div className="span">4 года</div>
                   <p>Срок обучения</p>
                 </div>
                 <div className="prohodnoyball">
-                  <h5>150</h5>
+                  <div className="span">150</div>
                   <p>Проходной балл</p>
                 </div>
               </div>
@@ -119,15 +189,15 @@ const Home = () => {
               </div>
               <div className="napravlenieinfo">
                 <div className="formaobuchenia">
-                  <h5>очная</h5>
+                  <div className="span">очная</div>
                   <p>Форма обучения</p>
                 </div>
                 <div className="srokobuchenia">
-                  <h5>4 года</h5>
+                  <div className="span">4 года</div>
                   <p>Срок обучения</p>
                 </div>
                 <div className="prohodnoyball">
-                  <h5>145</h5>
+                  <div className="span">145</div>
                   <p>Проходной балл</p>
                 </div>
               </div>
@@ -144,18 +214,18 @@ const Home = () => {
               </div>
               <div className="napravlenieinfo">
                 <div className="formaobuchenia">
-                  <h5>очная, заочная, очно-заочная</h5>
+                  <div className="span">очная, заочная, очно-заочная</div>
                   <p>Форма обучения</p>
                 </div>
                 <div className="srokobuchenia">
-                  <h5>2 или 2,5 года</h5>
+                  <div className="span">2 или 2,5 года</div>
                   <p>Срок обучения</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </PageWrapperHome>
+        </FadeIn>
+      </div>
     </div>
   );
 };

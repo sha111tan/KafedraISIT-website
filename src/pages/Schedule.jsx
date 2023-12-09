@@ -1,5 +1,6 @@
 import React from "react";
 import { PageWrapper } from "../components/PageWrapper";
+import FadeIn from "../components/FadeIn";
 
 const Schedule = () => {
   return (
