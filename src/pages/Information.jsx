@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { PageWrapper } from "../components/PageWrapper";
 import FadeIn from "../components/FadeIn";
 
 const Information = () => {
@@ -36,7 +35,9 @@ const Information = () => {
           <div className="left">
             <div className="lilbox4">
               <p>
-                <div className="span">Научная деятельность</div>
+                <div className="titleinf">
+                  <div className="span">Научная деятельность</div>
+                </div>
                 Студенты и преподаватели активно занимаются научной
                 деятельностью в области информационных технологий
               </p>

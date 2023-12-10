@@ -1,16 +1,14 @@
 // src/pages/Home.jsx
-import React, { useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { PageWrapperHome } from "../components/PageWrapperHome";
-import zgu1 from "../image/zgu1.png";
+import React from "react";
+import { motion } from "framer-motion";
 import nornik from "../image/nornik.jpg";
 import arn from "../image/arn.jpg";
 import administracia from "../image/administracia.jpg";
 import FadeIn from "../components/FadeIn";
-import Marquee from "react-fast-marquee";
 import norilsk from "../image/norilsk.png";
 import nornikel2 from "../image/nornikel2.png";
 import itlogo from "../image/itlogo.png";
+import zgu1 from "../image/zgu1.png";
 
 const Home = () => {
   const FADE_DOWN_ANIMATION_VARIANTS = {
@@ -38,11 +36,6 @@ const Home = () => {
           variants={FADE_DOWN_ANIMATION_VARIANTS}
         >
           <h1>&lt;/Кафедра "Информационные системы и технологии"/&gt;</h1>
-          <div>
-            <a href="https://polaruniversity.ru/">
-              <img src={zgu1} className="zguimg"></img>
-            </a>
-          </div>
         </motion.div>
 
         <motion.div
@@ -66,9 +59,9 @@ const Home = () => {
               Норильск
             </p>
             <div className="imgsection">
-              <img src={nornik} alt="nornik" />
-              <img src={arn} alt="arn" />
-              <img src={administracia} alt="administracia" />
+              <img src={nornik} className="part" />
+              <img src={arn} className="part" />
+              <img src={administracia} className="part" />
             </div>
           </div>
         </motion.div>

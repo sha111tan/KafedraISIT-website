@@ -1,8 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-import { PageWrapper } from "../components/PageWrapper";
-import FadeIn from "../components/FadeIn";
 import Petrov from "../image/petrov.jpg";
 import Dyptan from "../image/dyptan.jpg";
 import Tsukanov from "../image/tsukanov.jpg";
