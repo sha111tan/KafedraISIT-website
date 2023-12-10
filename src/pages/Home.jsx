@@ -88,7 +88,7 @@ const Home = () => {
             <div className="lilbox4">
               <div align="center">
                 <div className="span">Средний возраст сотрудников:</div>
-                <p>36,5 лет</p>
+                <div className="year">36,5 лет</div>
               </div>
             </div>
           </div>
