@@ -540,7 +540,10 @@ nav .active {
   border-radius: 8px;
 }
 .mail {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
+}
+.phone {
+  padding-top: 5px;
 }
 .selectorgroup {
   display: grid;
@@ -703,7 +706,7 @@ nav .active {
   clip-path: inset(20px 50px 20px 50px round 40px);
 }
 .footerbox {
-  background: #8d8d8d;
+  background: #8d8d8d00;
   box-shadow: 0 4px 6px -1px rgba(0, 60, 255, 0.153),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   margin-top: 60px;
