@@ -1,10 +1,11 @@
 // src/pages/Home.jsx
 import React from "react";
 import { motion } from "framer-motion";
+
 import nornik from "../image/nornik.jpg";
 import arn from "../image/arn.jpg";
 import administracia from "../image/administracia.jpg";
-import FadeIn from "../components/FadeIn";
+import FadeIn from "../components/animations/FadeIn";
 import norilsk from "../image/norilsk.png";
 import nornikel2 from "../image/nornikel2.png";
 import itlogo from "../image/itlogo.png";
@@ -15,6 +16,11 @@ const Home = () => {
     hidden: { opacity: 0, y: -10 },
     show: { opacity: 1, y: 0, transition: { type: "spring" } },
   };
+  const FADE_UP_ANIMATION_VARIANTS = {
+    hidden: { opacity: 0, y: 10 },
+    show: { opacity: 1, y: 0, transition: { type: "spring" } },
+  };
+
   return (
     <div>
       <motion.div
@@ -71,7 +77,7 @@ const Home = () => {
         <FadeIn delay={0.2} direction="right" padding fullwidth>
           <h3 align="center">О кафедре</h3>
         </FadeIn>
-        <FadeIn delay={0.3} direction="right" padding fullwidth>
+        <FadeIn delay={0.2} direction="left" padding fullwidth>
           <div className="kaf1">
             <div className="lilbox4">
               <div align="center">
@@ -143,8 +149,9 @@ const Home = () => {
         <FadeIn delay={0.2} direction="right" padding fullwidth>
           <h3 align="center">Направления</h3>
         </FadeIn>
-        <FadeIn delay={0.3} direction="right" padding fullwidth>
-          <div className="napravlenias">
+
+        <div className="napravlenias">
+          <FadeIn delay={0.2} direction="left" padding fullwidth>
             <div className="lilbox17">
               <div className="titlenapravlenie1 background-tint">
                 <h4 align="left">Прикладная информатика в экономике</h4>
@@ -155,9 +162,10 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+
               <div className="napravlenieinfo">
                 <div className="formaobuchenia">
-                  <div className="span">очная</div>
+                  <div className="span">Очная</div>
                   <p>Форма обучения</p>
                 </div>
                 <div className="srokobuchenia">
@@ -168,8 +176,14 @@ const Home = () => {
                   <div className="span">150</div>
                   <p>Проходной балл</p>
                 </div>
+                <div className="studenti">
+                  <div className="span">80</div>
+                  <p>Студентов</p>
+                </div>
               </div>
             </div>
+          </FadeIn>
+          <FadeIn delay={0.3} direction="left" padding fullwidth>
             <div className="lilbox17">
               <div className="titlenapravlenie2 background-tint">
                 <h4 align="left">Информационные системы и технологии</h4>
@@ -182,7 +196,7 @@ const Home = () => {
               </div>
               <div className="napravlenieinfo">
                 <div className="formaobuchenia">
-                  <div className="span">очная</div>
+                  <div className="span">Очная</div>
                   <p>Форма обучения</p>
                 </div>
                 <div className="srokobuchenia">
@@ -193,8 +207,14 @@ const Home = () => {
                   <div className="span">145</div>
                   <p>Проходной балл</p>
                 </div>
+                <div className="studenti">
+                  <div className="span">101</div>
+                  <p>Студентов</p>
+                </div>
               </div>
             </div>
+          </FadeIn>
+          <FadeIn delay={0.4} direction="left" padding fullwidth>
             <div className="lilbox17">
               <div className="titlenapravlenie3 background-tint">
                 <h4 align="left">Прикладная информатика в экономике</h4>
@@ -207,17 +227,21 @@ const Home = () => {
               </div>
               <div className="napravlenieinfo">
                 <div className="formaobuchenia">
-                  <div className="span">очная, заочная, очно-заочная</div>
+                  <div className="span">Очная, заочная</div>
                   <p>Форма обучения</p>
                 </div>
                 <div className="srokobuchenia">
                   <div className="span">2 или 2,5 года</div>
                   <p>Срок обучения</p>
                 </div>
+                <div className="studenti">
+                  <div className="span">32</div>
+                  <p>Студентов</p>
+                </div>
               </div>
             </div>
-          </div>
-        </FadeIn>
+          </FadeIn>
+        </div>
       </div>
     </div>
   );

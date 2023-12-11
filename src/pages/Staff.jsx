@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+
 import Petrov from "../image/petrov.jpg";
 import Dyptan from "../image/dyptan.jpg";
 import Tsukanov from "../image/tsukanov.jpg";

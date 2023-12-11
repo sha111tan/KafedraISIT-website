@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ScheduleTab from "../components/ScheduleTab";
-import data from "../components/schedule.json";
+import ScheduleTab from "../components/schedule/ScheduleTab";
+import data from "../components/schedule/data/schedule.json";
 
 const Schedule = () => {
   const FADE_DOWN_ANIMATION_VARIANTS = {
