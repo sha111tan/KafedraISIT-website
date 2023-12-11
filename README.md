@@ -1,4 +1,4 @@
-# React + Vite
+# Сайт кафедры "Информационные системы и технологии", ЗГУ г.Норильск
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
