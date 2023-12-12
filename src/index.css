@@ -1825,7 +1825,7 @@ h6 {
     font-family: "Play";
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border: 2px solid #edf2f7;
+    border: 1px solid #edf2f7;
     position: relative;
     outline: none;
     cursor: pointer;
@@ -2038,7 +2038,7 @@ h6 {
     font-family: "Play";
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border: 2px solid #edf2f7;
+    border: 1px solid #edf2f7;
     position: relative;
     outline: none;
     cursor: pointer;
@@ -2085,7 +2085,7 @@ h6 {
     font-family: "Play";
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border: 2px solid #edf2f7;
+    border: 1px solid #edf2f7;
     position: relative;
     outline: none;
     cursor: pointer;
