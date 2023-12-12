@@ -36,7 +36,9 @@
   width: 100%;
   box-sizing: border-box;
 }
-
+html {
+  overflow-x: hidden;
+}
 body {
   overflow-x: hidden;
   background-color: hsl(var(--background));
